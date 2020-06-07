@@ -28,6 +28,7 @@ const authModule = {
       state.refreshToken = "";
       state.status = "";
       cookies.remove("user-token");
+      cookies.remove("refresh-token");
     },
     setToken(state, payload) {
       state.token = payload;
